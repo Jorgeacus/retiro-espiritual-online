@@ -1,0 +1,225 @@
+---
+title: "Mini-Retiro Espiritual Online"
+output: 
+  html_document:
+    theme: lumen
+    css: styles.css
+---
+
+```{css, echo=FALSE}
+:root {
+  --fundo-pagina: #F5F0FF;      /* Lilás claríssimo */
+  --fundo-secao: #CCE1FF;       /* Azul celeste suave */
+  --borda-esquerda: #B19CD9;    /* Violeta médio suave */
+  --botao: #6B5B95;             /* Roxo médio sereno */
+  --botao-hover: #45458B;       /* Azul índigo médio */
+  --texto-escuro: #2C1810;      /* Cor principal do texto */
+  --texto-claro: #FFFFFF;       /* Cor do texto em fundos escuros */
+}
+
+/* Estilos base */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--fundo-pagina);
+  color: var(--texto-escuro);
+}
+
+h1, h2, h3 {
+  color: var(--botao);
+  margin-top: 1.5em;
+  margin-bottom: 0.8em;
+}
+
+.header-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.section {
+  margin-bottom: 40px;
+  padding: 25px;
+  background-color: var(--fundo-secao);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(107, 91, 149, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.section:hover {
+  transform: translateY(-2px);
+}
+
+.program-day {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 20px;
+  margin: 15px 0;
+  border-left: 4px solid var(--borda-esquerda);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.program-day:hover {
+  border-left-width: 6px;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.program-day h3 {
+  color: var(--botao);
+  margin-top: 0;
+}
+
+.contact-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.button {
+  padding: 14px 28px;
+  background-color: var(--botao);
+  color: var(--texto-claro);
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.button:hover {
+  background-color: var(--botao-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Estilização adicional para listas */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  padding: 8px 0;
+  padding-left: 24px;
+  position: relative;
+}
+
+ul li:before {
+  content: "•";
+  color: var(--borda-esquerda);
+  font-size: 1.2em;
+  position: absolute;
+  left: 8px;
+}
+```
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+<!-- Imagem do cabeçalho -->
+<img src="Simbolo-Mini-Retiro-Espiritual.jpg" alt="Mini-Retiro Espiritual" class="header-image">
+
+<!-- Seção de Apresentação -->
+<div class="section">
+## Bem-vindo ao nosso Mini-Retiro Espiritual Online
+
+Junte-se a nós nesta jornada transformadora de renovação espiritual e autoconhecimento.
+
+Este Retiro tem por objetivo ajudar você a se preparar para o Final do Ano de 2024, fazendo uma Limpeza orgânica através da prática do Semi-Jejum, deixando você mais leve e com uma sensação maior de bem-estar físico; uma Limpeza Energética e Espiritual, através da Yoga Rúnica direcionada para a saúde e o bem-estar; das Orações, Decretos, Afirmações e Ativações para trazer equilíbrio e harmonia, proteção espiritual; das Meditações Guiadas para direcionar as energias positivas e elevadas para a Realização, Materialização, Concretização aqui no Plano Físico de seus sonhos, planos, projetos, metas e objetivos para 2025; e ainda, através das Leituras diárias - de mensagens, textos de Auto-Ajuda e outros, ampliando assim a sua consciência e o seu entendimento para aproveitar ainda mais esta oportunidade de crescimento e desenvolvimento pessoal, profissional e espiritual para 2025.
+
+Este retiro foi cuidadosamente planejado para proporcionar uma experiência profunda de conexão interior, tudo isso no conforto do seu lar.
+
+**O que você encontrará nesta jornada:**
+- Meditações guiadas por instrutor experiente
+- Prática de Yoga Rúnica - visando o bem-estar físico e energético
+- Momentos especiais de Leituras - expansão da consciência e Auto-Ajuda
+- Acompanhamento em Grupo e Individual - consoante as necessidades
+- Momentos de Sintonização com Orações, Decretos, Afirmações e Ativações
+</div>
+
+<!-- Seção de Programação -->
+<div class="section">
+## Programação do Retiro
+
+<div class="program-day">
+### Dia 14 de Dezembro de 2024 - Sábado
+- 08h - Oração de Preparação das Energias para o dia;
+- 08h:30min. - Pequeno-Almoço (Café da manhã);
+- 10h - Yoga Rúnica - atividade Online em direto (participação do Grupo);
+- 10h:30min. - Lanche;
+- 12h/12h:30min. - Almoço;
+- 14h - Leitura - mensagem, auto-ajuda, expansão de consciência 
+(participação do Grupo);
+- 16h - Lanche;
+- 18h - Orações, Decretos, Afirmações e Ativações;
+- 18h:30min. - Meditação Guiada - atividade Online em direto (participação do Grupo);
+- 19:30 - Jantar;
+- 21h:30min./22h - Ceia
+</div>
+
+<div class="program-day">
+### Dia 15 de Dezembro de 2024 - Domingo
+- 08h - Oração de Preparação das Energias para o dia;
+- 08h:30min. - Pequeno-Almoço (Café da manhã);
+- 10h - Yoga Rúnica - atividade Online em direto (participação do Grupo);
+- 10h:30min. - Lanche;
+- 12h/12h:30min. - Almoço;
+- 14h - Leitura - mensagem, auto-ajuda, expansão de consciência 
+(participação do Grupo);
+- 16h - Lanche;
+- 18h - Orações, Decretos, Afirmações e Ativações;
+- 18h:30min. - Meditação Guiada - atividade Online em direto (participação do Grupo);
+- 19:30 - Jantar;
+- 21h:30min./22h - Ceia
+
+</div>
+
+<div class="program-day">
+### Dia 16 de Dezembro de 2024 - Segunda
+- 08h - Oração de Preparação das Energias para o dia;
+- 08h:30min. - Pequeno-Almoço (Café da manhã);
+- 10h - Yoga Rúnica - atividade Online em direto (participação do Grupo);
+- 10h:30min. - Lanche;
+- 12h/12h:30min. - Almoço;
+- 14h - Leitura - mensagem, auto-ajuda, expansão de consciência 
+(participação do Grupo);
+- 16h - Lanche;
+- 18h - Orações, Decretos, Afirmações e Ativações;
+- 20h - Meditação Guiada - atividade Online em direto (participação do Grupo);
+- 20h:30min./21h - Jantar
+
+*Encerramento do Mini-Retiro Espiritual*
+
+**ATENÇÃO:** - Todas as Atividades com participação do Grupo em direto (ao vivo) serão gravadas - A Yoga Rúnica, as Meditações Guiadas e as Leituras, para que os participantes possam acompanhar posteriormente em outros dias e horários disponíveis.
+
+</div>
+</div>
+
+<!-- Seção de Contato -->
+<div class="section">
+## Inicie Sua Jornada Interior
+
+<p style="text-align: center; margin: 20px 0;">
+Vagas limitadas para garantir uma experiência mais profunda e personalizada.
+</p>
+
+<p style="text-align: center; margin: 20px 0;">
+PRÉ-INSCRIÇÃO (e Pagamento): Aproveite o VALOR PROMOCIONAL de Pré-Inscrição até o dia 04/12. Clique no link abaixo:
+</p>
+
+
+<div class="contact-buttons">
+<a href="https://forms.google.com/3WgzTyFnBC4h3PCE6" class="button" target="_blank">📝 Inscreva-se Aqui</a>
+<a href="https://wa.me/969133326" class="button" target="_blank">📱 Fale Conosco</a>
+
+</div>
+</div>
+
