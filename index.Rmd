@@ -217,7 +217,7 @@ PRÉ-INSCRIÇÃO (e Pagamento): Aproveite o VALOR PROMOCIONAL de Pré-Inscriçã
 
 
 <div class="contact-buttons">
-<a href="https://forms.gle/3WgzTyFnBC4h3PCE6" class="button" target="_blank">📝 Inscreva-se Aqui</a>
+<p><a href="https://forms.gle/3WgzTyFnBC4h3PCE6" class="button" target="_blank">📝 Inscreva-se aqui</a></p>
 <a href="https://wa.me/969133326" class="button" target="_blank">📱 Fale Conosco</a>
 
 </div>
